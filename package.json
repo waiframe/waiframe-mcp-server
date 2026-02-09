@@ -1,0 +1,44 @@
+{
+  "name": "@waiframe/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Waiframe.ai — connect AI coding tools to your wireframe designs",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "waiframe-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waiframe/waiframe-mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "wireframe",
+    "ai",
+    "design",
+    "model-context-protocol",
+    "claude",
+    "cursor"
+  ]
+}
