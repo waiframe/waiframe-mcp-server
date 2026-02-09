@@ -122,10 +122,10 @@ export interface ProjectDetail {
 
 export interface ProjectContext {
   appType?: string;
-  audience?: string;
-  features?: string[];
+  targetAudience?: string;
   brandStyle?: string;
-  additionalContext?: string;
+  keyFeatures?: string[];
+  constraints?: string;
   [key: string]: unknown;
 }
 

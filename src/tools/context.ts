@@ -30,12 +30,12 @@ export function registerContextTools(server: McpServer, client: WaiframeApiClien
         "",
         "## App Details",
         ctx.appType ? `- App Type: ${ctx.appType}` : "",
-        ctx.audience ? `- Target Audience: ${ctx.audience}` : "",
+        ctx.targetAudience ? `- Target Audience: ${ctx.targetAudience}` : "",
         ctx.brandStyle ? `- Brand Style: ${ctx.brandStyle}` : "",
-        ctx.features && ctx.features.length > 0
-          ? `- Key Features: ${ctx.features.join(", ")}`
+        ctx.keyFeatures && ctx.keyFeatures.length > 0
+          ? `- Key Features: ${ctx.keyFeatures.join(", ")}`
           : "",
-        ctx.additionalContext ? `\n## Additional Context\n${ctx.additionalContext}` : "",
+        ctx.constraints ? `- Constraints: ${ctx.constraints}` : "",
       ].filter(Boolean);
 
       return { content: [{ type: "text", text: lines.join("\n") }] };

@@ -45,7 +45,7 @@ export function registerProjectTools(server: McpServer, client: WaiframeApiClien
         : "  (no flows defined)";
 
       const contextStr = detail.project.aiContext
-        ? `\n## App Context\n- Type: ${detail.project.aiContext.appType || "N/A"}\n- Audience: ${detail.project.aiContext.audience || "N/A"}\n- Style: ${detail.project.aiContext.brandStyle || "N/A"}\n- Features: ${detail.project.aiContext.features?.join(", ") || "N/A"}`
+        ? `\n## App Context\n- Type: ${detail.project.aiContext.appType || "N/A"}\n- Audience: ${detail.project.aiContext.targetAudience || "N/A"}\n- Style: ${detail.project.aiContext.brandStyle || "N/A"}\n- Features: ${detail.project.aiContext.keyFeatures?.join(", ") || "N/A"}`
         : "";
 
       const text = `# ${detail.project.name}
