@@ -8,6 +8,7 @@ import { registerScreenTools } from "./tools/screens.js";
 import { registerFlowTools } from "./tools/flows.js";
 import { registerContextTools } from "./tools/context.js";
 import { registerComponentSpecTools } from "./tools/component-spec.js";
+import { registerBlueprintTools } from "./tools/blueprint.js";
 import { registerComponentCatalogResource } from "./resources/component-catalog.js";
 import { registerDesignPatternsResource } from "./resources/design-patterns.js";
 
@@ -33,6 +34,7 @@ registerScreenTools(server, client);
 registerFlowTools(server, client);
 registerContextTools(server, client);
 registerComponentSpecTools(server);
+registerBlueprintTools(server, client);
 
 // Register resources
 registerComponentCatalogResource(server);
