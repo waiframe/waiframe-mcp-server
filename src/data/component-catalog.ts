@@ -71,7 +71,7 @@ export const COMPONENT_CATALOG: ComponentData[] = [
   { type: "stepper", category: "navigation", description: "Step progress indicator", props: { steps: "string[]", currentStep: "number?" } },
 
   // LIST
-  { type: "list", category: "list", description: "Vertical list of items", props: { items: "string[]", showDividers: "boolean?", showArrows: "boolean?" } },
+  { type: "list", category: "list", description: "Vertical list of items with optional checkboxes and right icons", props: { items: "{title,subtitle?,icon?,checked?:boolean,rightIcon?:string}[]", showDividers: "boolean?", showChevron: "boolean?", showCheckboxes: "boolean? (shows checkbox per item)" } },
   { type: "product-card", category: "list", description: "E-commerce product card with image area, title, price", props: { title: "string?", price: "string?", image: "boolean?" } },
 
   // MEDIA
